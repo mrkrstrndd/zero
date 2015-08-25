@@ -1,0 +1,114 @@
+body {
+	padding: 0;
+	margin: 0;
+    font-family: arial,helvetica;
+}
+
+header{
+	top:-0.2em;
+	position: fixed;
+	width:100%;   
+	height:6em;    
+	z-index:1000;     	
+}
+
+.logo{
+	width:15em;
+	top:1em;
+	left:5em;
+	padding: 1em 1em 1em 1em;
+	border-radius: 0.3em;
+	background-color: rgb(255, 255,255);
+	position: absolute;
+	float:left;
+	z-index:1000;
+    border: 0.2em solid #ED7800;
+}
+
+.body{
+	height:1000px;
+}
+
+.menus{
+	top:3.6em;
+	left:20em;
+	position: absolute;
+	background-color: rgba(255, 255,255,0);
+    padding:0;
+	width:100%;
+}
+
+.menus li{
+	color:black;            	   
+    list-style-type: none;
+    float:left;
+}
+
+.menus li a
+{
+    text-decoration: none;
+    padding:1em 2em 1em 2em;
+    color:#FFF;
+    cursor: pointer;
+}
+
+.menus a:hover
+{
+    color:#444444;
+}
+
+.menus a:hover + .tago
+{               
+    opacity:1;
+}
+
+
+.container{
+	padding:1.5em 3em 1.5em 3em;
+}
+
+.bottom
+{
+    height:50%;
+    background-color: #ED7800;             
+}
+
+.top
+{
+    height:50%;
+    background-image:url('img/crm.png');
+}
+
+.child-menu > li
+{
+    float:none !important;
+    background-color: #ED7800;
+    color: #FFF;
+    padding: 0.5em 0em 0.5em 1em;
+}
+
+.child-menu
+{
+    margin:0 !important;
+    padding:0 !important;
+    z-index: 1000;
+    top: 1em;
+    position:relative;
+    background-color:red;
+}
+
+.tago
+{                
+    opacity:0;
+    transition: opacity 0.1s ease-out;
+}
+
+.social > a
+{
+    padding: 3em;
+}
+
+.fullpage
+{
+    color:white !important;
+}
